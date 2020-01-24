@@ -1,0 +1,53 @@
+<div class="center">
+  <h1>Welcome to Mario's Specialty Foods!</h1>
+  <h2>At Mario's you'll find top quality international food products at low prices!</h2>
+  <h3>Check out some of our more popular products below!</h3>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="products">Most Reviewed</p>
+      <% if @products_most_reviews.any? %>
+        <ul>
+          <% @products_most_reviews.each do |most_reviewed| %>
+
+            <li><%= link_to most_reviewed.name, product_path(most_reviewed) %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>There are no product reviews yet.</p>
+      <% end %>
+    </div>
+    <div class="col-sm-4">
+      <p class="products">Most Recently Added</p>
+      <% if @products_most_recent.any? %>
+        <ul>
+          <% @products_most_recent.each do |most_recent| %>
+
+            <li><%= link_to most_recent.name, product_path(most_recent) %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>There are no recent products added.</p>
+      <% end %>
+    </div>
+    <div class="col-sm-4">
+      <p class="products">Made In The USA</p>
+      <% if @products_locally_made.any? %>
+        <ul>
+          <% @products_locally_made.each do |local_products| %>
+
+            <li><%= link_to local_products.name, product_path(local_products) %></li>
+          <% end %>
+        </ul>
+      <% else %>
+        <p>There are currently no products made in the United States of America.</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<p class="center"><%= link_to "Create new product", new_product_path %></p>
+<p class="center"><%= link_to "View all current products", products_path %></p>
