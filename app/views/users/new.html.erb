@@ -7,4 +7,6 @@
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
   <%= f.submit "Sign Up" %>
+  <%= f.label "Admin" %>
+  <%= f.check_box :admin, {}, true, false %> 
 <% end %>
