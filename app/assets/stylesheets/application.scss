@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+
+
+ body {
+   color: #e6edf5;
+   font-family: 'Amarante', cursive;
+   background: url('https://www.eurekalert.org/multimedia/pub/web/206293_web.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+ }
+
+ h1 {
+   font-size: 48px;
+ }
+
+ h4 {
+   font-family: 'Kalam', cursive;
+ }
+
+ a {
+   color: #e6edf5;
+   font-size: 18px;
+ }
+
+ ul {
+   list-style-type: none;
+ }
+
+ .center {
+   text-align: center;
+ }
+
+ .container {
+   padding-top: 80px;
+ }
+
+ .products {
+   font-size: 26px;
+ }
+
+ img:hover {
+   -webkit-transform: scaleX(-1);
+   transform: scaleX(-1);
+ }
+
+ input {
+   color: black;
+ }
