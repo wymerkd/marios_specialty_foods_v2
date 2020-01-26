@@ -1,6 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :authorize
-  before_action :user_admin, only: [:create]
+  # before_action :user_admin, only: [:create]
 
   def new
     @product = Product.find(params[:product_id])
