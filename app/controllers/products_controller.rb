@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-  before_action :authorize, except: [:index, :show]
   # after_action :authorize, except: [:index, :show]
   before_action :user_admin, only: [:new, :create, :edit, :update, :destroy]
 
