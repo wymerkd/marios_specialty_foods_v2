@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_25_002152) do
+ActiveRecord::Schema.define(version: 2020_01_26_191240) do
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2020_01_25_002152) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
-    t.boolean "admin"
+    t.boolean "admin", default: false
     t.string "password_hash"
     t.string "password_salt"
   end
