@@ -9,16 +9,11 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    if !current_user
-      flash[:alert] = "You need to log in."
-    end
+    redirect_to "/signin" unless current_user
+    flash[:alert] = "You are not logged in."
   end
+end
 
-  def user_admin
-    if !current_user
-      flash[:alert] = "You are not logged in."
-    elsif current_user.admin = false
-      flash[:alert] = "You need to be an admin to perform that action."
-    end
-  end
+def user_admin
+  flash[:alert] = "You need to be an admin to perform that action." unless current_user.admin = true
 end
