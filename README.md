@@ -41,6 +41,10 @@ _Please contact Kyle Wymer, at wymerkd@gmail.com if support is needed_
 * _Gemfile_
 * _SQL_
 
+https://stackoverflow.com/questions/7465259/how-can-i-reload-the-current-page-in-ruby-on-rails
+https://stackoverflow.com/questions/39358379/ruby-on-rails-before-action-as-action-preventer
+https://gist.github.com/thebucknerlife/10090014
+https://github.com/ryanb/cancan/wiki/authorizing-controller-actions
 
 ### License
 

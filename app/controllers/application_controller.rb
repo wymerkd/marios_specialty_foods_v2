@@ -15,6 +15,6 @@ class ApplicationController < ActionController::Base
 end
 
 def user_admin
-  redirect_to "/"
   flash[:alert] = "You need to be an admin to perform that action." unless current_user.admin
+  redirect_back(fallback_location: root_path)
 end
