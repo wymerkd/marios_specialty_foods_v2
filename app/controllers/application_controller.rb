@@ -10,10 +10,11 @@ class ApplicationController < ActionController::Base
 
   def authorize
     redirect_to "/signin" unless current_user
-    flash[:alert] = "You are not logged in."
+    # flash[:alert] = "You are not logged in."
   end
 end
 
 def user_admin
-  flash[:alert] = "You need to be an admin to perform that action." unless current_user.admin = true
+  redirect_to "/"
+  flash[:alert] = "You need to be an admin to perform that action." unless current_user.admin
 end

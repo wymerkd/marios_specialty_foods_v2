@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-before_action :authorize, only: [:show]
+# before_action :authorize, only: [:show]
 
   def index
     @products_most_reviews = Product.most_reviews
