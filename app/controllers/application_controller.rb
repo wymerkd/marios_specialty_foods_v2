@@ -8,32 +8,20 @@ class ApplicationController < ActionController::Base
     end
   end
 
-#   def authorize
-#     redirect_to "/signin" unless current_user
-#     # flash[:alert] = "You are not logged in."
-#   end
-# end
-#
-# def user_admin
-#   flash[:alert] = "You need to be an admin to perform that action." unless current_user.admin
-#   # redirect_back(fallback_location: root_path)
-# end
-
-
-def authorize
-  if !current_user
-  redirect_to "/signin"
-  flash[:alert] = "You are not logged in."
-end
-end
-
-def user_admin
-if !current_user
-    redirect_to "/signin"
-    flash[:alert] = "You are not logged in."
-  elsif current_user.admin == false
-    redirect_back(fallback_location: root_path)
-    flash[:alert] = "You need to be an admin to perform that action."
+  def authorize
+    if !current_user
+      redirect_to "/signin"
+      flash[:alert] = "You are not logged in."
+    end
   end
-end
+
+  def user_admin
+    if !current_user
+      redirect_to "/signin"
+      flash[:alert] = "You are not logged in."
+    elsif current_user.admin == false
+      redirect_back(fallback_location: root_path)
+      flash[:alert] = "You need to be an admin to perform that action."
+    end
+  end
 end
