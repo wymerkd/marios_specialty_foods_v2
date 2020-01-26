@@ -1,20 +1,20 @@
-# _Mario's Specialty Foods_
+# _Mario's Specialty Foods V2_
 
-#### _An application that allows a user to track food products and add reviews to each product, 1/17/2019_
+#### _An application that allows a user to track food products and add reviews to each product, 1/24/2020_
 
 #### By _**Kyle Wymer**_
 
 ## Description
 
-_This project demonstrates my current skills in Ruby and Rails. The application allows a user to input multiple food products and add multiple reviews for each product. The user is also able to update and delete products and reviews._
+_This project demonstrates my current skills in Ruby and Rails. The application allows a user to view products and product reviews. It allows authenticated users to have more access by being able to create multiple reviews for products once signed in. Also, it allows a user with administrative access to have full CRUD accessibility._
 
 
 ## Specifications
 
-
-* _Application allows a user to input a food product_
-* _Application allows a user to add multiple reviews to a product_
-* _Application allows a user to edit and delete products and reviews_
+* _Application allows a user to view products and reviews_
+* _Application allows a user to create an account to become an authenticated user_
+* _Application allows an authenticated user to add multiple reviews for different products_
+* _Application allows an authenticated administrator to have full CRUD privileges (Create, Read, Update, and Delete) for both reviews and products_
 
 
 ## Setup/Installation Requirements
@@ -40,12 +40,15 @@ _Please contact Kyle Wymer, at wymerkd@gmail.com if support is needed_
 * _Rails_
 * _Gemfile_
 * _SQL_
+* _Bcrypt (authentication)_
 
-https://stackoverflow.com/questions/7465259/how-can-i-reload-the-current-page-in-ruby-on-rails
-https://stackoverflow.com/questions/39358379/ruby-on-rails-before-action-as-action-preventer
-https://gist.github.com/thebucknerlife/10090014
-https://github.com/ryanb/cancan/wiki/authorizing-controller-actions
-https://stackoverflow.com/questions/8627156/adding-default-true-to-boolean-in-existing-rails-column
+
+## Helpful Resources Used
+* _https://stackoverflow.com/questions/7465259/how-can-i-reload-the-current-page-in-ruby-on-rails_
+* _https://stackoverflow.com/questions/39358379/ruby-on-rails-before-action-as-action-preventer_
+* _https://gist.github.com/thebucknerlife/10090014_
+* _https://github.com/ryanb/cancan/wiki/authorizing-controller-actions_
+* _https://stackoverflow.com/questions/8627156/adding-default-true-to-boolean-in-existing-rails-column_
 
 ### License
 
