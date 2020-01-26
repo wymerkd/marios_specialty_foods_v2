@@ -45,6 +45,7 @@ https://stackoverflow.com/questions/7465259/how-can-i-reload-the-current-page-in
 https://stackoverflow.com/questions/39358379/ruby-on-rails-before-action-as-action-preventer
 https://gist.github.com/thebucknerlife/10090014
 https://github.com/ryanb/cancan/wiki/authorizing-controller-actions
+https://stackoverflow.com/questions/8627156/adding-default-true-to-boolean-in-existing-rails-column
 
 ### License
 
