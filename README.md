@@ -25,7 +25,8 @@ _This project demonstrates my current skills in Ruby and Rails. The application 
 * _To recreate the database, run $ rake db:create_
 * _Then run $ rails s_
 * _In your browser connect to localhost:3000_
-* _https://marios-specialty-foods.herokuapp.com/_
+* _Or view Heroku deployed version below:_
+* _https://marios-foods.herokuapp.com/_
 
 
 ## Known Bugs
