@@ -32,6 +32,10 @@
       <% else %>
         <p>There are no recent products added.</p>
       <% end %>
+      <br>
+      <br>
+      <p class="center"><%= link_to "Create new product", new_product_path %></p>
+      <p class="center"><%= link_to "View all current products", products_path %></p>
     </div>
     <div class="col-sm-4">
       <p class="products">Made In The USA</p>
@@ -48,6 +52,3 @@
     </div>
   </div>
 </div>
-
-<p class="center"><%= link_to "Create new product", new_product_path %></p>
-<p class="center"><%= link_to "View all current products", products_path %></p>
