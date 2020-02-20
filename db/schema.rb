@@ -35,4 +35,5 @@ ActiveRecord::Schema.define(version: 2020_01_26_191240) do
     t.string "password_hash"
     t.string "password_salt"
   end
+
 end
