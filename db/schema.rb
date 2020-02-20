@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_01_26_191240) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.decimal "cost"
@@ -36,4 +39,5 @@ ActiveRecord::Schema.define(version: 2020_01_26_191240) do
     t.string "password_salt"
   end
 
+  add_foreign_key "reviews", "products"
 end
